@@ -77,14 +77,6 @@ portfolio/
 
 ---
 
-## GitHub Pages 배포 방법
-
-1. GitHub 저장소 생성 후 코드 push
-2. Settings → Pages → Branch: main / (root) → Save
-3. `https://{username}.github.io/{repo}` 에서 접속 확인
-
----
-
 ## 주의사항
 
 GitHub API는 인증 없이 시간당 60회 요청 제한이 있습니다.  
