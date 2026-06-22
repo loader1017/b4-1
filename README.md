@@ -7,9 +7,7 @@ AI/SW 기초 과정 — 웹 기초와 프론트엔드 미션
 
 ## 배포 URL
 
-**https://YOUR_GITHUB_ID.github.io/portfolio**
-
-> 배포 후 위 URL을 실제 주소로 교체하세요.
+**https://loader1017.github.io/b4-1**
 
 ---
 
