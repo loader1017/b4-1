@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SungEun | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">PP</a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about"    class="nav__link">About</a></li>
+        <li><a href="#skills"   class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact"  class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="다크 모드 토글">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <p class="hero__sub">안녕하세요,</p>
+        <h1 class="hero__title">반갑습니다</h1>
+        <p class="hero__desc">HTML, CSS, JavaScript로 만든 포트폴리오 사이트 입니다.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact"  class="btn btn--outline">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">About Me</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__image-wrap reveal">
+            <img
+              src="images/profile.jpg"
+              alt="프로필 이미지"
+              class="about__image"
+              width="240"
+              height="240"
+            />
+          </div>
+          <div class="about__text reveal">
+            <p>고양이 입니다.</p>
+            <p>똑똑하고 귀엽게 생겼습니다.</p>
+            <ul class="about__list">
+              <li><i class="fa-solid fa-location-dot"></i> 코숏. 대한민국 국적 고양이.</li>
+              <li><i class="fa-solid fa-graduation-cap"></i> 초,중,고 및 4년제 학사에 준하는 지능 보유중.(추정)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Skills</h2>
+        </div>
+        <ul class="skills__list">
+          <li class="skill-item reveal">
+            <i class="fa-brands fa-html5"></i>
+            <span class="skill-item__name">HTML5</span>
+            <span class="skill-item__desc">시맨틱 마크업, 웹 표준</span>
+          </li>
+          <li class="skill-item reveal">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span class="skill-item__name">CSS3</span>
+            <span class="skill-item__desc">Flexbox, Grid, 반응형 디자인</span>
+          </li>
+          <li class="skill-item reveal">
+            <i class="fa-brands fa-js"></i>
+            <span class="skill-item__name">JavaScript</span>
+            <span class="skill-item__desc">ES6+, DOM 조작, 비동기 처리</span>
+          </li>
+          <li class="skill-item reveal">
+            <i class="fa-brands fa-github"></i>
+            <span class="skill-item__name">Git & GitHub</span>
+            <span class="skill-item__desc">버전 관리, GitHub Pages 배포</span>
+          </li>
+          <li class="skill-item reveal">
+            <i class="fa-solid fa-database"></i>
+            <span class="skill-item__name">SQLite</span>
+            <span class="skill-item__desc">관계형 DB, SQL 쿼리</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Projects</h2>
+        </div>
+
+        <!-- 언어 필터 버튼 (보너스) -->
+        <div class="projects__filters reveal" id="filter-btns"></div>
+
+        <!-- 상태 영역 -->
+        <div id="projects-status" aria-live="polite"></div>
+
+        <!-- 카드 그리드 -->
+        <div class="projects__grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Contact</h2>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p>궁금한 점이 있으시면 메시지를 남겨주세요. 빠르게 답장 드리겠습니다.</p>
+            <ul class="contact__links">
+              <li>
+                <a href="https://github.com/loader1017" target="_blank" rel="noopener noreferrer" class="contact__link">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </li>
+              <li>
+                <a href="mailto:dohc1223@gmail.com" class="contact__link">
+                  <i class="fa-solid fa-envelope"></i> dohc1223@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">이름 <span class="required">*</span></label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="홍길동" autocomplete="name" />
+              <span class="form-error" id="name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">이메일 <span class="required">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com" autocomplete="email" />
+              <span class="form-error" id="email-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">메시지 <span class="required">*</span></label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="안녕하세요!" rows="5"></textarea>
+              <span class="form-error" id="message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+              메시지 보내기
+            </button>
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <i class="fa-solid fa-circle-check"></i> 메시지가 전송되었습니다!
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 SungEun. All rights reserved.</p>
+      <ul class="footer__links">
+        <li><a href="https://github.com/loader1017" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- 스크롤 탑 버튼 -->
+  <button class="scroll-top" id="scroll-top" aria-label="맨 위로 이동">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
